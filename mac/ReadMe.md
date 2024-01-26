@@ -28,7 +28,7 @@ plugins=(
   )
 ```
 
-5. Install font: [Download font](./oh-my-zsh/SourceCodePro+Powerline+Awesome+Regular.ttf)
+5. Install font: [Download font](./font/SourceCodePro+Powerline+Awesome+Regular.ttf)
 
 7. Configure theme using
 ```
