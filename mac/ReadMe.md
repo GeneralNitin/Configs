@@ -30,6 +30,9 @@ plugins=(
 
 5. Install font: [Download font](./font/SourceCodePro+Powerline+Awesome+Regular.ttf)
 
+6. Setup VS Code: <img width="1368" alt="image" src="https://github.com/GeneralNitin/Configs/assets/61423609/ee706e23-e085-4a86-b402-f4185f7b1a50">
+
+
 7. Configure theme using
 ```
 p10k configure
