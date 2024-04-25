@@ -44,7 +44,17 @@ jobs:
       fail-fast: false
       matrix:
         include:
-        # CodeQL supports the following values keywords for 'language': 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift'
+          # Analyzes C and C++ code using the commands in `Build C and C++ code`
+          - language: c-cpp
+            build-mode: manual
+          # Analyzes C# code by automatically detecting a build
+          - language: csharp
+            build-mode: autobuild
+          # Analyzes Java code directly from the codebase without a build
+          - language: java-kotlin
+            build-mode: none # analyzes Java only
+        # language: ['c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift']
+        # Code supports the following values keywords for 'language': 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
         # Use 'java-kotlin' to analyze code written in Java, Kotlin or both
         # Use 'javascript-typescript' to analyze code written in JavaScript, TypeScript or both
